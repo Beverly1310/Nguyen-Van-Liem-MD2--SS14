@@ -16,7 +16,7 @@ public class Bai3 {
         System.out.println("Nhap vao ngay thu hai (dd/MM/yyyy):");
         LocalDate d2 = LocalDate.parse(new Scanner(System.in).nextLine(), DateTimeFormatter.ofPattern("dd/MM/yyyy"));
         // tinh so ngay giua 2 ngay
-        long dayBetwen = Duration.between(d1.atStartOfDay(),d2.atStartOfDay()).toDays();
-        System.out.println("So ngay giua ngay "+d1 +" va ngay "+d2+" la: "+dayBetwen);
+        long dayBetween = Duration.between(d1.atStartOfDay(),d2.atStartOfDay()).toDays();
+        System.out.println("So ngay giua ngay "+d1 +" va ngay "+d2+" la: "+dayBetween);
     }
 }

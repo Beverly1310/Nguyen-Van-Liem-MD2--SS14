@@ -13,7 +13,7 @@ public class Bai9 {
         LocalDate d1 = LocalDate.parse(new Scanner(System.in).nextLine(), DateTimeFormatter.ofPattern("dd/MM/yyyy"));
         System.out.println("Nhap ngay thu hai(dd/MM/yyy):");
         LocalDate d2 = LocalDate.parse(new Scanner(System.in).nextLine(), DateTimeFormatter.ofPattern("dd/MM/yyyy"));
-        int dayBetween = Period.between(d1,d2).getDays();
+        int dayBetween = d1.compareTo(d2);
         System.out.println("Ket qua sao so sanh la: "+dayBetween);
     }
 }
